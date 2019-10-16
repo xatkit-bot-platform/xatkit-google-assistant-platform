@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<platform:PlatformDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:platform="com.xatkit.platform" name="GoogleAssistantPlatform" runtimePath="com.xatkit.google.assistant.platform.GoogleAssistantPlatform">
+  <eventProviderDefinitions xsi:type="platform:InputProviderDefinition" name="GoogleAssistantIntentProvider">
+    <outContexts name="googleassistant" lifeSpan="1">
+      <parameters name="request_id"/>
+      <parameters name="session_id"/>
+      <parameters name="user_id"/>
+      <parameters name="username"/>
+    </outContexts>
+  </eventProviderDefinitions>
+  <actions name="Reply">
+    <parameters key="message"/>
+  </actions>
+</platform:PlatformDefinition>

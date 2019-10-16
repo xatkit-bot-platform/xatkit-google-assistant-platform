@@ -1,0 +1,9 @@
+import library "GoogleBasicReply/GoogleBasicReply-Lib.xmi" as GoogleBasicReplyLib
+import library "CoreLibrary"
+import platform "GoogleAssistantPlatform"
+
+use provider GoogleAssistantPlatform.GoogleAssistantIntentProvider
+
+on intent Basic do 
+	action GoogleAssistantPlatform.Reply(message: "Hi! How are you?")
+	
