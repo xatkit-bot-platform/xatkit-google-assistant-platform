@@ -2,9 +2,7 @@ Library AlexaBasicReplyIntents
 
 intent Basic {
 	inputs {
-		"Hello!"
-		"hello"
-		"hello!"
+		"Talk to Xatkit Interface" 
 	}
 	creates context User
 }

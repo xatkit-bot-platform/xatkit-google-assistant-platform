@@ -94,7 +94,7 @@ public class GoogleAssistantRestHandler extends JsonRestHandler {
         } catch (InterruptedException e) {
 
         }
-        String responseMessage = "hello, this is Xatkit!";//this.provider.getRuntimePlatform().getMessage(requestId);
+        String responseMessage = this.provider.getRuntimePlatform().getMessage(requestId);
 		Log.info("Request requested: {0}", requestId);
         if (nonNull(responseMessage)) {
             simpleResponse.addProperty("textToSpeech", responseMessage);
