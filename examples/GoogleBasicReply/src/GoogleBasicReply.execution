@@ -1,0 +1,15 @@
+import library "GoogleBasicReply/src/GoogleBasicReply.intent" as GoogleBasicReplyLib
+import library "CoreLibrary"
+import platform "google-assistant-platform-model/GoogleAssistantPlatform.platform" as GoogleAssistantPlatform
+
+use provider GoogleAssistantPlatform.GoogleAssistantIntentProvider
+
+on intent Basic do 
+	GoogleAssistantPlatform.Reply("Hi! How are you?")
+	
+on intent HowAmI do 
+	GoogleAssistantPlatform.Reply("I see you are " +  context.get("User").get("wellness") + "! What can I do for you today?")
+	
+on intent TellMeA do 
+	GoogleAssistantPlatform.Reply("Ok, I will tell you a " +  context.get("User").get("needs") + ": Once upon a time, there was an invisible castle. No one saw it...")
+	

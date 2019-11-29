@@ -1,0 +1,27 @@
+Library GoogleBasicReplyIntents
+
+intent Basic {
+	inputs {
+		"Talk to Xatkit Interface" 
+	}
+	creates context User
+}
+
+
+intent HowAmI follows Basic {
+	inputs {
+		"Fine thanks"
+	}
+	creates context User {
+		sets parameter wellness from fragment "Fine" (entity any)
+	}
+}
+
+intent TellMeA {
+	inputs {
+		"tell me a story"
+	}
+	creates context User {
+		sets parameter needs from fragment "story" (entity any)
+	}
+}
