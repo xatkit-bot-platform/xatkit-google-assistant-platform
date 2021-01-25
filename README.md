@@ -2,7 +2,6 @@ Xatkit Google Assistant Platform
 =====
 
 [![License Badge](https://img.shields.io/badge/license-EPL%202.0-brightgreen.svg)](https://opensource.org/licenses/EPL-2.0)
-[![Build Status](https://travis-ci.com/xatkit-bot-platform/xatkit-google-assistant-platform.svg?branch=master)](https://travis-ci.com/xatkit-bot-platform/xatkit-google-assistant-platform)
 [![Wiki Badge](https://img.shields.io/badge/doc-wiki-blue)](https://github.com/xatkit-bot-platform/xatkit-google-assistant-platform/blob/master/examples/GoogleBasicReply/README.md)
 
 Create a Google Assistant Action server and respond to the user using the Xatkit defined intent library.
